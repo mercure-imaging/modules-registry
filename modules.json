@@ -1,0 +1,13 @@
+[{
+    "name": "mercure-testmodule",
+    "description": "Demo module that shows how to write mercure processing modules",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-testmodule",
+    "dockerhubImage": "mercureimaging/mercure-testmodule:latest",
+    "status": "active"
+},{
+    "name": "mercure-anonymizer",
+    "description": "DICOM anonymization module for mercure",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-anonymizer",
+    "dockerhubImage": "mercureimaging/mercure-anonymizer:latest",
+    "status": "active"
+}]

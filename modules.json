@@ -10,4 +10,46 @@
     "githubUrl": "https://github.com/mercure-imaging/mercure-anonymizer",
     "dockerhubImage": "mercureimaging/mercure-anonymizer:latest",
     "status": "active"
+},{
+    "name": "mercure-decompressor",
+    "description": "Mercure module to decompress DICOM images. It uses the decoding plugins provided in the Pydicom package to decompress the files having different compressed transfer syntaxes.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-decompressor",
+    "dockerhubImage": "mercureimaging/mercure-decompressor:latest",
+    "status": "active"
+},{
+    "name": "mercure-totalsegmentator",
+    "description": "Mercure module to deploy TotalSegmentator tool for segmentation of 104 classes in CT images and 56 classes in MR images.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-totalsegmentator",
+    "dockerhubImage": "mercureimaging/mercure-totalsegmentator:latest",
+    "status": "active"
+},{
+    "name": "mercure-radiomics",
+    "description": "Mercure module to run IBSI compliant radiomics feature extraction.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-radiomics",
+    "dockerhubImage": "mercureimaging/mercure-radiomics:latest",
+    "status": "active"
+},{
+    "name": "mercure-dcm2bids",
+    "description": "Mercure Module to run dcm2bids conversion in mercure.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-dcm2bids",
+    "dockerhubImage": "mercureimaging/mercure-dcm2bids:latest",
+    "status": "active"
+},{
+    "name": "MAP-monaiclassify",
+    "description": "Lung Nodule Detection module that can be packaged as Monai Application Package. It can be run in isolation and can also be incorporated into Mercure workflow.",
+    "githubUrl": "https://github.com/mercure-imaging/MAP-monaiclassify",
+    "dockerhubImage": "mercureimaging/map-monaiclassify:latest",
+    "status": "active"
+},{
+    "name": "mercure-pyapetnet",
+    "description": "Mercure module to deploy pyapetnet - a convolutional neural network (CNN) to mimick the behavior of anatomy-guided PET reconstruction in image space.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-pyapetnet",
+    "dockerhubImage": "mercureimaging/mercure-pyapetnet:latest",
+    "status": "active"
+},{
+    "name": "mercure-exampleinference",
+    "description": "Example module demonstrating the inference of a DL-based segmentation model.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-exampleinference",
+    "dockerhubImage": "mercureimaging/mercure-exampleinference:latest",
+    "status": "active"
 }]

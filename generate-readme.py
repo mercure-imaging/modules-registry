@@ -29,7 +29,7 @@ def generate_modules_table():
     modules.sort(key=sort_key)
 
     # Build the markdown table
-    md_table = "| Module | Stats |\n"
+    md_table = "| Module | Statistics |\n"
     md_table += "|:---------------------------|:-----------:|\n"
 
     for module in modules:
@@ -47,11 +47,11 @@ def generate_modules_table():
             md_table += f"Docker Image: **`{dockerhub_image}`**  <br/>"
         md_table += f"| "
 
-        md_table += f"![Github Stars](https://img.shields.io/github/stars/{repo_name}) <br/>"
+        md_table += f"![Github Stars](https://img.shields.io/github/stars/{repo_name}?logo=github&label=Stars) <br/>"
         if dockerhub_image:
             docker_user = dockerhub_image.split('/')[0]
             docker_repo = dockerhub_image.split('/')[1].split(':')[0]
-            md_table += f"![Docker Pulls](https://img.shields.io/docker/pulls/{docker_user}/{docker_repo})"
+            md_table += f"![Docker Pulls](https://img.shields.io/docker/pulls/{docker_user}/{docker_repo}?logo=docker&label=Pulls)"
         md_table += f"|\n"
 
     return md_table.strip()

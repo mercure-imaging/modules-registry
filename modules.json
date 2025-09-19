@@ -46,4 +46,10 @@
     "githubUrl": "https://github.com/mercure-imaging/mercure-pyapetnet",
     "dockerhubImage": "mercureimaging/mercure-pyapetnet:latest",
     "status": "active"
+},{
+    "name": "mercure-exampleinference",
+    "description": "Example module demonstrating the inference of a DL-based segmentation model.",
+    "githubUrl": "https://github.com/mercure-imaging/mercure-exampleinference",
+    "dockerhubImage": "mercureimaging/mercure-exampleinference:latest",
+    "status": "active"
 }]

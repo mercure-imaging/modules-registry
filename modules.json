@@ -51,5 +51,6 @@
     "description": "Example module demonstrating the inference of a DL-based segmentation model.",
     "githubUrl": "https://github.com/mercure-imaging/mercure-exampleinference",
     "dockerhubImage": "mercureimaging/mercure-exampleinference:latest",
+    "test": "value",
     "status": "active"
 }]

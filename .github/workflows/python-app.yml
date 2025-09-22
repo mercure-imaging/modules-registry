@@ -30,7 +30,7 @@ jobs:
       - name: Verify if modules.json is changed
         id: check_changes
         run: |
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+          CHANGED_FILES=$(git diff --name-only HEAD^)
           echo "Changed files: $CHANGED_FILES"
           if [[ "$CHANGED_FILES" == *"modules.json"* ]]; then
             echo "Modules.json file changed."

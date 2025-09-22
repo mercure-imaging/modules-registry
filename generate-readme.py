@@ -81,7 +81,7 @@ def update_readme():
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(updated_content)
 
-    print("Docs updated!")
+    print("README generated!")
 
 # Run the update process
 if __name__ == "__main__":

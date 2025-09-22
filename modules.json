@@ -45,5 +45,6 @@
     "description": "Mercure module to deploy pyapetnet - a convolutional neural network (CNN) to mimick the behavior of anatomy-guided PET reconstruction in image space.",
     "githubUrl": "https://github.com/mercure-imaging/mercure-pyapetnet",
     "dockerhubImage": "mercureimaging/mercure-pyapetnet:latest",
-    "status": "active"
+    "status": "active",
+    "testKey": "testvalue"
 }]

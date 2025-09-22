@@ -6,9 +6,11 @@ This repository is meant to be a centralized hub for all the mercure modules out
 
 ## Community Contributions
 
-Add your module to the [`modules.json`](https://github.com/mercure-imaging/modules-registry/blob/main/modules.json) file with the status to `active` , **then run `python generate-readme.py` to regenerate the table below.**
+Add your module to the [`modules.json`](https://github.com/mercure-imaging/modules-registry/blob/main/modules.json) file with the status to `active`.
 
-You can setup the Python env by installing the requirements in the `requirements.txt` file.
+Checkout the `dev` branch and push the above change. It will run the workflow to automatically update the `README.md` table with the latest module changes.
+
+**Note:** Changes will be applied manually by the authors to the `main` branch for better maintenance.
 
 **Note:** Please don't add your module at the end of the array in the `modules.json` file to avoid conflicts. It'd be better if you choose a random place in the array.
 

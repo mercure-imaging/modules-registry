@@ -27,23 +27,34 @@ jobs:
       - name: Run modules JSON tests
         run: python test-modules-json.py
 
-      # - name: Verify if only modules.json is changed
-      #   id: check_changes
-      #   run: |
-      #     if [[ $(git diff --name-only HEAD~1 HEAD) == "modules.json" ]]; then
-      #       echo "Modules.json is the only file changed."
-      #       echo "::set-output name=modules_changed::true"
-      #     else
-      #       echo "Other files have been changed."
-      #       echo "::set-output name=modules_changed::false"
-      #     fi
+      - name: Verify if modules.json is changed
+        id: check_changes
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep "modules.json"; then
+            echo "Modules.json file changed."
+            echo "modules_changed=true" >> $GITHUB_ENV
+          else
+            echo "No changes in the modules file."
+            echo "modules_changed=false" >> $GITHUB_ENV
+          fi
 
       - name: Run generation script
-        # if: steps.check_changes.outputs.modules_changed == 'true'
+        if: env.modules_changed == 'true'
         run: python generate-readme.py
 
+      - name: Check for changes
+        if: env.modules_changed == 'true'
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            echo "Changes detected."
+            echo "changes_detected=true" >> $GITHUB_ENV
+          else
+            echo "No changes detected."
+            echo "changes_detected=false" >> $GITHUB_ENV
+          fi
+
       - name: Commit and push changes
-        # if: steps.check_changes.outputs.modules_changed == 'true'
+        if: env.modules_changed == 'true' && env.changes_detected == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"

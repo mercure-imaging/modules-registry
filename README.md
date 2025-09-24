@@ -6,7 +6,18 @@ This repository is meant to be a centralized hub for all the mercure modules out
 
 ## Community Contributions
 
-Add your module to the [`modules.json`](https://github.com/mercure-imaging/modules-registry/blob/main/modules.json) file with the status to `active`.
+Add your module to the [`modules.json`](https://github.com/mercure-imaging/modules-registry/blob/main/modules.json) file.
+
+``` json
+{
+    "name": "<mandatory_field>",
+    "description": "<mandatory_field>",
+    "githubUrl": "<mandatory_field>",
+    "dockerhubImage": "<optional_field>",
+    "coverPhotoUrl": "<optional_field>",
+    "status": "active"
+}
+```
 
 Checkout the `dev` branch and push the above change. It will run the workflow to automatically update the `README.md` table with the latest module changes.
 

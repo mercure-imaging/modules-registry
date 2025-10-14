@@ -10,11 +10,12 @@ Add your module to the [`modules.json`](https://github.com/mercure-imaging/modul
 
 ``` json
 {
-    "name": "<mandatory_field>",
-    "description": "<mandatory_field>",
-    "githubUrl": "<mandatory_field>",
-    "dockerhubImage": "<optional_field>",
-    "coverPhotoUrl": "<optional_field>",
+    "name": "<mandatory_field> -> (str)",
+    "description": "<mandatory_field> -> (str)",
+    "githubUrl": "<mandatory_field> -> (str)",
+    "dockerhubImage": "<optional_field> -> (str)",
+    "supportedImageTags": "<optional_field> -> list(str)",
+    "coverPhotoUrl": "<optional_field> -> (str)",
     "status": "active"
 }
 ```

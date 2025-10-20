@@ -33,12 +33,14 @@
     "description": "Mercure Module to run dcm2bids conversion in mercure.",
     "githubUrl": "https://github.com/mercure-imaging/mercure-dcm2bids",
     "dockerhubImage": "mercureimaging/mercure-dcm2bids:latest",
+    "isMonaiModule": false,
     "status": "active"
 },{
     "name": "MAP-monaiclassify",
     "description": "Lung Nodule Detection module that can be packaged as Monai Application Package. It can be run in isolation and can also be incorporated into Mercure workflow.",
     "githubUrl": "https://github.com/mercure-imaging/MAP-monaiclassify",
     "dockerhubImage": "mercureimaging/map-monaiclassify:latest",
+    "isMonaiModule": true,
     "status": "active"
 },{
     "name": "mercure-pyapetnet",

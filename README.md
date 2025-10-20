@@ -16,6 +16,7 @@ Add your module to the [`modules.json`](https://github.com/mercure-imaging/modul
     "dockerhubImage": "<optional_field> -> (str)",
     "supportedImageTags": "<optional_field> -> list(str)",
     "coverPhotoUrl": "<optional_field> -> (str)",
+    "isMonaiModule": "<optional_field> -> (bool)",
     "status": "active"
 }
 ```
